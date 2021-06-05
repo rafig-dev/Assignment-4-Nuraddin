@@ -1,0 +1,7 @@
+Square;red;true;3.0
+Rectangle;black;false;10.0;20.0
+Circle;blue;false;5.0
+Square;black;false;10.0
+Circle;yellow;true;3.0
+Square;purple;true;5.0
+Rectangle;cyan;true;5.0;5.0
