@@ -55,11 +55,10 @@ public class Rectangle extends Shape {
 
     @Override
     public void parseFromSaveString(String line) {
-        Rectangle rectangle = new Rectangle();
         String[] fields = line.split(";");
-        rectangle.setColor(fields[1]);
-        rectangle.setFilled(Boolean.valueOf(fields[2]));
-        rectangle.setWidth(Double.parseDouble(fields[3]));
-        rectangle.setLength(Double.parseDouble(fields[4]));
+        this.setColor(fields[1]);
+        this.setFilled(Boolean.valueOf(fields[2]));
+        this.setWidth(Double.parseDouble(fields[3]));
+        this.setLength(Double.parseDouble(fields[4]));
     }
 }
