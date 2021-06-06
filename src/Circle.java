@@ -40,15 +40,14 @@ public class Circle extends Shape {
 
     @Override
     public String parseToSaveString() {
-        return "Circle;"+this.color+';'+this.filled+';'+this.radius;
+        return "Circle;" + this.color + ';' + this.filled + ';' + this.radius;
     }
 
     @Override
     public void parseFromSaveString(String line) {
-        Circle circle = new Circle();
         String[] fields = line.split(";");
-        circle.setColor(fields[1]);
-        circle.setFilled(Boolean.valueOf(fields[2]));
-        circle.setRadius(Double.parseDouble(fields[3]));
+        this.setColor(fields[1]);
+        this.setFilled(Boolean.valueOf(fields[2]));
+        this.setRadius(Double.parseDouble(fields[3]));
     }
 }

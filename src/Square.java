@@ -37,16 +37,15 @@ public class Square extends Rectangle {
 
     @Override
     public String parseToSaveString() {
-        return "Square;"+this.color+';'+this.filled+';'+this.getSide();
+        return "Square;" + this.color + ';' + this.filled + ';' + this.getSide();
     }
 
     @Override
     public void parseFromSaveString(String line) {
-        Square square = new Square();
         String[] fields = line.split(";");
-        square.setColor(fields[1]);
-        square.setFilled(Boolean.valueOf(fields[2]));
-        square.setSide(Double.parseDouble(fields[3]));
+        this.setColor(fields[1]);
+        this.setFilled(Boolean.valueOf(fields[2]));
+        this.setSide(Double.parseDouble(fields[3]));
     }
 }
 

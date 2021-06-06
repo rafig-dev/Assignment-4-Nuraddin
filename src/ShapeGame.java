@@ -54,7 +54,10 @@ public class ShapeGame {
             for (Shape shape : shapes) {
                 System.out.println(shape);
                 bw.write(String.valueOf(shapes.get(shapes.indexOf(shape))));
+                bw.newLine();
+                bw.flush();
             }
+            fw.flush();
             fw.close();
 
         } catch (IOException e) {
