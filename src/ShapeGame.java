@@ -47,12 +47,9 @@ public class ShapeGame {
     public void saveShapes(String fileName) throws IOException {
         try {
             File file = new File(fileName);
-
-            System.out.println("File has been created successfully");
             FileWriter fw = new FileWriter(file.getName());
             BufferedWriter bw = new BufferedWriter(fw);
             for (Shape shape : shapes) {
-                System.out.println(shape);
                 bw.write(String.valueOf(shapes.get(shapes.indexOf(shape))));
                 bw.newLine();
                 bw.flush();

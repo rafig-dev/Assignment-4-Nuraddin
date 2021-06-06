@@ -1,7 +1,0 @@
-Square [Rectangle [Shape [color=red, filled=true], width=3.0, length=3.0]]
-Rectangle [Shape [color=black, filled=false], width=10.0, length=20.0]
-Circle [Shape [color=gray, filled=false], radius=5.0]
-Square [Rectangle [Shape [color=black, filled=true], width=10.0, length=10.0]]
-Circle [Shape [color=gray, filled=true], radius=3.0]
-Square [Rectangle [Shape [color=purple, filled=true], width=5.0, length=5.0]]
-Rectangle [Shape [color=green, filled=true], width=5.0, length=5.0]

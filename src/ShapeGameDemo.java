@@ -4,9 +4,8 @@ public class ShapeGameDemo {
     private static ShapeGame shg = new ShapeGame();
 
     public static void main(String[] args) {
-
         try {
-            shg.loadShapes("shapes.txt");
+            shg.loadShapes("C:\\JavaSources\\Assignment4\\shapes.txt");
 
             printShapes(null);
             printShapes(ShapeType.CIRCLE);
@@ -21,7 +20,7 @@ public class ShapeGameDemo {
 
             shg.getShapes().get(shg.getShapes().size() - 1).setColor("green");
 
-            shg.saveShapes("shapes_modified.txt");
+            shg.saveShapes("C:\\JavaSources\\Assignment4\\shapes_modified.txt");
         } catch (IOException e) {
             e.printStackTrace();
         }
